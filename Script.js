@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollPos < section.offsetTop + section.offsetHeight
       ) {
         const id = section.getAttribute("id");
-        const activeLink = document.querySelector(nav-link[href="#${id}"]);
+        const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
         if (activeLink) activeLink.classList.add("active");
       }
     });
